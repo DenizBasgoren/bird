@@ -150,16 +150,16 @@ function clean ( ) {
 
 //input handlers
 onkeypress = function ( x ) {
-	if (x.keyCode == 119) { // w
+	if (x.code == "KeyW") { // w
 		bird.dy -= 10;		
 	}
-	else if (x.keyCode == 115) { // s
+	else if (x.code == "KeyS") { // s
 		bird.dy = 10;
 	}
-	else if (x.keyCode == 100) { // d
+	else if (x.code == "KeyD") { // d
 		bird.dx = 10;		
 	}
-	else if (x.keyCode == 97) { // a
+	else if (x.code == "KeyA") { // a
 		bird.dx = -10;		
 	}
 }
